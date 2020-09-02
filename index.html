@@ -15,12 +15,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
 
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="flickity.css">
     
     <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="Pre-footer_buttons/footer_button_style.css"/>
-    <link rel="stylesheet" href="flickity.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
@@ -28,16 +28,16 @@
         
 </head>
 <body>
-
-        
-        <div class="loader">
-            <video autoplay loop muted playsinline poster="Videos/4d79e45299ba276f530cbda84f5eca05.gif" src="Videos/loader.mp4"></video>
-        </div>
-
+    
+    
+    <div class="plasmid-loader">
+        <video autoplay muted loop src="Videos/loader.mp4"></video>
+    </div>
+    
     <!--Loader-->
         <script type="text/javascript">
             window.addEventListener("load", function () {
-                const loader = document.querySelector(".loader");
+                const loader = document.querySelector(".plasmid-loader");
                 loader.className += " hidden"; // new class = "loader hidden"
             });
         </script>
@@ -45,20 +45,30 @@
     <h1 style="background-color: orange;font-size:1rem;text-align: center;margin:0;">Navbar</h1>
     
     <div class="videoWrapper">
-        <video autoplay muted loop width="100%" src="Videos/Diabetes_1.mp4"></video>
+        <video autoplay muted width="100%" src="Videos/Diabetes_2.mp4"></video>
     </div>
-
+    
+    <div class="content">
+        <div class="container">
         <div class="animatedParent animateOnce" data-appear-top-offset='-300'>
             <div class="animated fadeIn">
                 <div class="scary">
-                    <div class="animated fadeInLeft slowest">
-                    A chronic disease<br> has impacted over<br> 463 million people worldwide
-                    </div>
-
+                        A chronic disease<br>
+                        has impacted over<br>
+                        463 million people<br>
+                        Worldwide!<br>
+                    
                     <video autoplay loop muted playsinline src="Videos/Globe_pin_man_fff.mp4" style=""></video>
                 </div>
             </div>    
-        </div>    
+        </div>  
+        </div>  
+        </div>  
+    
+    
+    
+    
+    
 
     <div class="content">
         <div class="container">
@@ -308,33 +318,8 @@
           });
         });
     </script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-            
-            
-     
-            
-            
-        
+   
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="flickity.pkgd.min.js"></script>
         <script src="css3-animate-it.js"></script>
     
 </body>
