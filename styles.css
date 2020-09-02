@@ -142,7 +142,6 @@ body{
     float: left;
     margin: auto;
     height: 100%;
-    text-align: justify;
 }
 
 @media(max-width:500px){
