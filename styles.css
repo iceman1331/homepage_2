@@ -44,7 +44,6 @@ body {
 .plasmid-loader video {
 	display: block;
 	margin: auto;
-	border: 1px solid red;
 	height: 60%;
 	width: 60%;
 }
@@ -410,6 +409,8 @@ sup {
 	}
 }
 
+
+/*
 a:hover,
 a:visited,
 a:link,
@@ -448,7 +449,7 @@ a:hover:after {
 	}
 }
 
-
+*/
 
 
 
