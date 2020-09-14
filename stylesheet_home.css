@@ -2,7 +2,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	width: 100%;
+	width: 100vw;
 	background-color: #ffffff;
 	box-sizing: border-box;
 }
@@ -27,34 +27,24 @@ body {
 
 /*Loader*/
 .plasmid-loader {
-	position: fixed;
-	z-index: 99;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
 	display: flex;
-	background-size: cover;
 	justify-content: center;
 	align-items: center;
+	height: 100vh;
+	width: 100vw;
 	background-color: #2b2828;
-	transform-origin: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	z-index: 9999;
 }
 
 .plasmid-loader video {
-	display: block;
-	margin: auto;
-	height: 60%;
-	width: 60%;
+	height: 100%;
+	width: 100%;
 }
 
-@media(max-width:500px) {
-	.plasmid-loader video {
-		width: 50%;
-		transform: translateY(-400px) translateX(-200px);
-
-	}
-}
 
 .plasmid-loader.hidden {
 	animation: pieout 1.5s;
@@ -90,13 +80,12 @@ body {
 .scary {
 	font-size: 1.75rem;
 	display: flex;
-	color: #000;
+	color: red;
 	padding: 0 5% 0 5%;
 	vertical-align: middle;
 	justify-content: center;
 	align-items: center;
-	float: left;
-	margin: auto;
+
 	height: 100%;
 	text-align: center;
 }
@@ -113,8 +102,8 @@ body {
 }
 
 .scary video {
-	width: 55%;
-	height: auto;
+	width: 55vw;
+	height:;
 	margin-left: 10px;
 }
 

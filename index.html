@@ -11,13 +11,13 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<title>Home</title>
-
+	<link rel="preload" href="Videos/loader.mp4" as="video"> 
 	<link rel="stylesheet" href="bootstrap.min.css" />
 
 	<link rel="stylesheet" href="flickity.css" />
-	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="stylesheet_home.css" />
 	<link rel="stylesheet" href="Pre-footer_buttons/footer_button_style.css" />
 
 	<link rel="stylesheet" href="NavBar/bootstrap.min.css" />
@@ -133,18 +133,22 @@
 		<video autoplay muted src="Videos/Diabetes_2.mp4"></video>
 	</div>
 
-	<div class="animatedParent animateOnce">
-		<div class="animated fadeIn">
+	<div class="animatedParent animateOnce" style="white-space: nowrap;">
+		
 			<div class="scary">
+			<div class="animated fadeInLeft  delay-500">	
 				Diabetes:
 				A chronic disease<br>
 				has impacted over<br>
 				463 million people<br>
 				worldwide!<br>
+			</div>
+			<div class="animated fadeIn">
 				<video autoplay loop muted playsinline src="Videos/Globe_pin_man_fff.mp4" style=""></video>
 			</div>
+			</div>
 		</div>
-	</div>
+
 
 	<div class="container">
 		<div class="animatedParent animateOnce">
