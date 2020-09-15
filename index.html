@@ -13,7 +13,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<title>Home</title>
-	<link rel="preload" href="Videos/loader.mp4" as="video"> 
+	<link rel="preload" href="Videos/loader.mp4" as="video">
 	<link rel="stylesheet" href="bootstrap.min.css" />
 
 	<link rel="stylesheet" href="flickity.css" />
@@ -134,9 +134,8 @@
 	</div>
 
 	<div class="animatedParent animateOnce" style="white-space: nowrap;">
-		
-			<div class="scary">
-			<div class="animated fadeInLeft  delay-500">	
+		<div class="scary">
+			<div class="animated fadeInLeft  delay-500">
 				Diabetes:
 				A chronic disease<br>
 				has impacted over<br>
@@ -146,8 +145,20 @@
 			<div class="animated fadeIn">
 				<video autoplay loop muted playsinline src="Videos/Globe_pin_man_fff.mp4" style=""></video>
 			</div>
-			</div>
 		</div>
+	</div>
+
+	<div class="container">
+		<div class="patient_counter">Dibetics since you visited this page
+			<pat id="counter">0</pat>
+		</div>
+	</div>
+
+
+
+
+
+
 
 
 	<div class="container">
@@ -155,10 +166,11 @@
 			<div class="centred-child">
 				<div class="animated fadeInRight">
 					<div class="insulin-production-img">
-						<h1>Diabetes and Insulin Production</h1>
-					</div>
-					<div class="img" style="width: 100%;margin-left:1%;">
-						<img src="insulin%20production.png">
+						<h1 style="padding-top: 0;margin-top: 20px;">Diabetes and Insulin Production</h1>
+
+						<div class="img" style="width: 100%;margin-left:1%;">
+							<img src="insulin%20production.png">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -210,7 +222,7 @@
 	<div class="animatedParent animateOnce">
 		<div class="centred-child" style="margin-top: 30px;">
 			<div class="animated fadeInLeft">
-				<div class="img" style="width: 90%;">
+				<div class="sad img" style="width: 90%;">
 					<img src="sad_quotes.png">
 				</div>
 			</div>
@@ -219,8 +231,10 @@
 
 	<div class="animatedParent animateOnce" data-sequence='500'>
 		<div class="container">
-			<h1 class="text animated fadeInLeft" data-id='1' style="text-align: center;font-size: 1.5rem;">Introducing</h1>
-			<h1 class="text animated fadeIn" data-id='2' style="text-align: center;color:;font-size:3rem;padding: 0;margin: 0;">BigPie</h1>
+			<h1 class="animated fadeInLeft" data-id='1' style="text-align: center;font-size: 1.5rem;">Introducing</h1>
+			<div class="pulse1">
+				<h1 class="text animated fadeIn" data-id='2' style="text-align: center;color:;font-size:3rem;padding: 0;margin: 0;">BigPie</h1>
+			</div>
 		</div>
 	</div>
 
@@ -232,7 +246,7 @@
 		<div class="animatedParent animateOnce">
 			<div class="centred-child" style="margin-top: 30px;">
 				<div class="animated fadeInRight">
-					<div class="img" style="width: 70%; ">
+					<div class="desc">
 						<img src="desc_newest.png">
 					</div>
 				</div>
@@ -352,6 +366,32 @@
 	</footer>
 
 	<!--Scripts-->
+	<!--Dibetics counter-->
+	<script type="text/javascript">
+		const counterP = document.getElementById('counter');
+
+		let counter = 0;
+		let paused = false;
+
+		increaseCounter();
+
+		function increaseCounter() {
+			counter++;
+
+			counterP.innerText = formatCounter(counter);
+
+			if (counter < 50001 && !paused) {
+				setTimeout(() => {
+					increaseCounter();
+				}, 1) //time
+			}
+		}
+
+		function formatCounter(counter) {
+			return counter > 1000 ? (counter / 1000).toFixed(1) + 'k' : counter;
+		}
+	</script>
+
 
 	<script src="flickity.pkgd.min.js"></script>
 
